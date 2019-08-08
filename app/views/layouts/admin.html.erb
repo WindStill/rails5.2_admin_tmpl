@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= render 'shared_admin/head' %>
+  </head>
+
+  <body class="skin-blue sidebar-mini ext-webkit ext-chrome ext-mac">
+    <div class="wrapper">
+      <%= render 'shared_admin/navbar' %>
+      <%= render 'shared_admin/sidebar' %>
+      <div class="content-wrapper">
+        <%= render 'shared_admin/flashes' %>
+        <section class="content-header">
+          <%= yield :content_header %>
+        </section>
+        <section class="content">
+          <%= yield %>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
+

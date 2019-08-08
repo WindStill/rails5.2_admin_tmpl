@@ -1,0 +1,23 @@
+<aside class="main-sidebar">
+  <!-- sidebar: style can be found in sidebar.less -->
+  <section class="sidebar">
+    <!-- sidebar menu: : style can be found in sidebar.less -->
+    <ul class="sidebar-menu">
+      <li class="header">菜单</li>
+
+      <li class="<%= 'active' if request.path == '/admin' %>">
+        <a href="/admin">
+          <i class="fa fa-dashboard"></i>
+          <span>信息总览</span>
+        </a>
+      </li>
+      <li class="<%= 'active' if request.path =~ /\/admin\/tasks/ %>">
+        <a href="/admin/tasks">
+          <i class="fa fa-users"></i>
+          <span>任务管理</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <!-- /.sidebar -->
+</aside>
