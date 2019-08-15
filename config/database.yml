@@ -19,14 +19,14 @@ default: &default
 
 development:
   <<: *default
-  database: appsdk_development
+  database: admin_tmpl_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: appsdk_test
+  database: admin_tmpl_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: appsdk_production
-  username: appsdk
-  password: <%= ENV['APPSDK_DATABASE_PASSWORD'] %>
+  database: admin_tmpl_production
+  username: admin_tmpl
+  password: <%= ENV['ADMIN_TMPL_DATABASE_PASSWORD'] %>

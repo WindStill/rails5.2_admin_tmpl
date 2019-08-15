@@ -1,0 +1,32 @@
+<div class="login-box">
+  <div class="login-logo">
+    <a href="/"><b>AppName</b></a>
+  </div>
+
+  <div class="login-box-body">
+    <p class="login-box-msg">登录</p>
+
+    <%= form_for(:session, url: admin_sessions_path) do |f| %>
+      <div id="error_explanation">
+        <ul>
+          <%- flash.each do |name, msg| -%>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="form-group has-feedback">
+        <%= f.text_field :username, autofocus: true, class: "form-control", placeholder: "用户名" %>
+        <span class="glyphicon glyphicon-phone-alt form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "密码" %>
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <%= f.submit "登录", class: "btn btn-primary btn-block btn-flat" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
