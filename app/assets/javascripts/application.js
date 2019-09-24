@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.remotipart
 //= require bootstrap
 //= require adminlte/adminlte
 //= require bootstrap-timepicker.min
@@ -27,6 +28,7 @@
 //= require activestorage
 //= require direct_uploads
 //= require main
+//= require form
 //= require turbolinks
 
 /*
