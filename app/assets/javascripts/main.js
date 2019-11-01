@@ -1,6 +1,8 @@
-//解决turbolinks与Adminlte一起的用的时候页面不撑满的问题
 document.addEventListener('turbolinks:load', function () {
+  //解决turbolinks与Adminlte一起的用的时候页面不撑满的问题
   $(window).trigger('resize');
+
+  //解决sidebar子菜单不展开的问题
   $('.sidebar-menu').tree();
 
   $('.alert').delay(2000).slideUp(500);
