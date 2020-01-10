@@ -1,5 +1,6 @@
 class Admin::SessionsController < Admin::BaseController
   skip_before_action :authenticate_admin!, except: [:destroy]
+  skip_authorize_resource
 
   def new
     sign_out if sign_in?

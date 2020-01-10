@@ -55,3 +55,8 @@ function centerModal() {
     $dialog.css("margin-top", '5%');
   }
 }
+
+function notAuthorized() {
+  $('#modal-tips .modal-body').text('没有权限');
+  $('#modal-tips').modal('show');
+}

@@ -3,6 +3,7 @@ class Admin::BaseController < ApplicationController
   before_action :store_location
   before_action :authenticate_admin!
   layout :set_layout
+  authorize_resource
 
   rescue_from CanCan::AccessDenied do |exception|
     respond_to do |format|
