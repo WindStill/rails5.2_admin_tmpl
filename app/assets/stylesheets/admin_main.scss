@@ -1,0 +1,88 @@
+body {
+  .alert {
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+}
+/*
+.logo img {
+  width: 100%;
+}
+.main-header {
+  .logo {
+    width: 160px;
+  }
+  .navbar {
+    margin-left: 160px;
+  }
+}
+.main-sidebar {
+  width: 160px;
+}
+.content-wrapper {
+  margin-left: 160px;
+}
+ */
+
+.form-inline {
+  width: auto !important;
+  select {
+    height: 30px;
+  }
+
+  #daterange {
+    border-radius: 0;
+  }
+
+  select:not([multiple]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1"><path d="M4 8L0 4h8z"/></svg>');
+    line-height: 15px;
+    font-size: 13px;
+    padding-right: 20px;
+  }
+  .bootstrap-select {
+    width: 200px !important;
+    height: 30px;
+    &>button {
+      height: 30px;
+      border-radius: 0;
+      background-color: #fff;
+      line-height: 15px;
+      font-size: 13px;
+    }
+  }
+
+  .input-group-sm {
+    .form-control, .input-group-addon, .input-group-btn > .btn {
+      border-radius: 0;
+    }
+  }
+}
+
+.box {
+  .box-title {
+    font-size: 15px;
+  }
+  .box-tools{
+    form {
+      width: 150px;
+      margin-right: 5px;
+    }
+  }
+  .box-footer {
+    text-align: center;
+  }
+}
+.dropdown-menu {
+  min-width: 90px;
+}
+form {
+  img {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

@@ -14,9 +14,21 @@
 //= require jquery_ujs
 //= require jquery.remotipart
 //= require bootstrap
+//= require adminlte/adminlte
+//= require bootstrap-timepicker.min
+//= require bootstrap-datetimepicker.min
+//= require bootstrap-datetimepicker.zh-CN
+//= require moment.min
+//= require daterangepicker.min
+//= require daterangepicker.zh-cn
+//= require bootstrap-select.min
+//= require bootstrap-select-zh_CN.min
+//= require raphael-min
+//= require morris.min
 //= require activestorage
 //= require direct_uploads
-//= require main
+//= require admin_main
+//= require admin_form
 //= require turbolinks
 
 /*

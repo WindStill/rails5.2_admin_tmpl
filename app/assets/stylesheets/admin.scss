@@ -12,8 +12,15 @@
  *
  *= require bootstrap
  *= require font-awesome
+ *= require adminlte/adminlte
+ *= require adminlte/skins/_all-skins
+ *= require bootstrap-timepicker.min
+ *= require bootstrap-datetimepicker.min
+ *= require daterangepicker.min
+ *= require bootstrap-select.min
  *= require direct_uploads
- *= require main
+ *= require morris
+ *= require admin_main
  *= require_self
  */
 
