@@ -1,7 +1,7 @@
 class Admin::BaseController < ApplicationController
   include SessionsHelper
   before_action :store_location
-  # before_action :authenticate_admin!
+  before_action :authenticate_admin!
   layout :set_layout
   authorize_resource :class => false
 
