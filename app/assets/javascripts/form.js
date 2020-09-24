@@ -6,8 +6,8 @@ $(document).on('change', 'form input[type="file"]', function() {
     limit = $(this).data('limit');
     if (limit && !checkSize(files[0], limit)) {
       $(this).val('');
-      $('#modal-tips .modal-body').text('图片不能大于' + limit);
-      $('#modal-tips').modal('show');
+      $('#modalTip .modal-body').text('图片不能大于' + limit);
+      $('#modalTip').modal('show');
       return false;
     }
     var reader = new FileReader();

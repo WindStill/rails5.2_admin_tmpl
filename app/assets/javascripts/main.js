@@ -14,26 +14,26 @@ $(document).on('click', 'a.action-confirm', function(event) {
   tiptext = $(this).text();
   if ($(this).data('tiptext') != undefined)
     tiptext = $(this).data('tiptext');
-  $('#modal-tips .modal-body').text('确认' + tiptext + '?');
+  $('#modalTip .modal-body').text('确认' + tiptext + '?');
 
   method = 'delete';
   if ($(this).data('amethod') != undefined)
     method = $(this).data('amethod');
   footer = '<button class="btn btn-default btn-sm" type="button" data-dismiss="modal">取消</button>\
             <a href="'+$(this).attr('href')+'" class="btn btn-primary btn-sm" data-remote="true" data-method="' + method + '" data-disable-with="提交中">确定</a>';
-  $('#modal-tips .modal-footer').html(footer);
-  $('#modal-tips').modal('show');
+  $('#modalTip .modal-footer').html(footer);
+  $('#modalTip').modal('show');
   return false
 });
 
 $(document).on('click', '.show-img', function() {
-  $('#imageModal .modal-body img').attr('src', $(this).data('img-url'));
-  $('#imageModal').modal('show');
+  $('#modalImg .modal-body img').attr('src', $(this).data('img-url'));
+  $('#modalImg').modal('show');
 });
 
 //处理模态框
-$(document).on('hide.bs.modal', '#modal-tips', resetModalTips);
-$(document).on('hidden.bs.modal', '#modal-tips', function() {
+$(document).on('hide.bs.modal', '#modalTip', resetModalTip);
+$(document).on('hidden.bs.modal', '#modalTip', function() {
   //解决表单弹窗再次弹窗后，原有表单弹窗不能滚动的问题
   if ($('.business.modal').css('display') == 'block')
     $('body').addClass('modal-open')
@@ -41,9 +41,9 @@ $(document).on('hidden.bs.modal', '#modal-tips', function() {
 $(document).on('show.bs.modal', '.modal', centerModal);
 $(window).on("resize", function() { $('.modal:visible').each(centerModal); });
 
-function resetModalTips() {
-  $('#modal-tips .modal-body').text('');
-  $('#modal-tips .modal-footer').html('<button class="btn btn-default btn-sm" type="button" data-dismiss="modal">关闭</button>');
+function resetModalTip() {
+  $('#modalTip .modal-body').text('');
+  $('#modalTip .modal-footer').html('<button class="btn btn-default btn-sm" type="button" data-dismiss="modal">关闭</button>');
 }
 
 function centerModal() {
@@ -62,6 +62,6 @@ function centerModal() {
 }
 
 function notAuthorized() {
-  $('#modal-tips .modal-body').text('没有权限');
-  $('#modal-tips').modal('show');
+  $('#modalTip .modal-body').text('没有权限');
+  $('#modalTip').modal('show');
 }
