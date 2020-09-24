@@ -95,3 +95,16 @@ $(document).on('click', 'form button[type="submit"]', function() {
   });
   return flag;
 });
+
+function checkSize(file, limit) {
+  var fileSize = 0;
+  fileSize = file.size;
+  r = limit.match(/(\d+)(\w+)/);
+  size = r[1]
+  if (r[2] == 'MB')
+   size = size * 1000
+  if(fileSize / 1024 > size){
+     return false;
+  }
+  return true;
+}

@@ -26,6 +26,11 @@ $(document).on('click', 'a.action-confirm', function(event) {
   return false
 });
 
+$(document).on('click', '.show-img', function() {
+  $('#imageModal .modal-body img').attr('src', $(this).data('img-url'));
+  $('#imageModal').modal('show');
+});
+
 //处理模态框
 $(document).on('hide.bs.modal', '#modal-tips', resetModalTips);
 $(document).on('hidden.bs.modal', '#modal-tips', function() {
