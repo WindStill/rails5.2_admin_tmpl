@@ -1,0 +1,15 @@
+defaults: &defaults
+  app:
+    name: ''
+    description: ''
+    keywords: ''
+    domain_base: ''
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
