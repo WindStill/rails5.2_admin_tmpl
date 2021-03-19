@@ -7,7 +7,7 @@ gem 'rails', '~> 5.2.3'
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 gem 'puma', '~> 3.11'
 
-gem 'kaminari', '~> 1.1'
+gem 'kaminari', '~> 1.2'
 gem 'kaminari-bootstrap'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
