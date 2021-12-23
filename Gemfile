@@ -19,7 +19,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'remotipart', '~> 1.4'
 gem 'jquery-rails'
-gem 'bootstrap-sass', '>= 3.4.1'
+gem 'bootstrap-sass', '~> 3.4.1'
 gem 'font-awesome-rails', '~> 4.7'
 gem 'rails-adminlte', '~> 0.1.9'
 
