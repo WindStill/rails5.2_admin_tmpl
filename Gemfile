@@ -5,7 +5,7 @@ ruby '2.6.5'
 
 gem 'rails', '~> 5.2.6'
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
-gem 'puma', '~> 3.11'
+gem 'puma', '>= 4.3.9'
 
 gem 'kaminari', '~> 1.1'
 gem 'kaminari-bootstrap'
@@ -19,7 +19,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'remotipart', '~> 1.4'
 gem 'jquery-rails'
-gem 'bootstrap-sass', '~> 3.3.7'
+gem 'bootstrap-sass', '>= 3.4.1'
 gem 'font-awesome-rails', '~> 4.7'
 gem 'rails-adminlte', '~> 0.1.9'
 
