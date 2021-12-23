@@ -1,9 +1,9 @@
 source 'https://gems.ruby-china.com/'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.3.1'
+ruby '2.6.5'
 
-gem 'rails', '~> 5.2.3'
+gem 'rails', '~> 5.2.6'
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 gem 'puma', '~> 3.11'
 
