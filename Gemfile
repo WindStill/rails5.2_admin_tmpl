@@ -5,7 +5,7 @@ ruby '2.6.5'
 
 gem 'rails', '~> 5.2.6'
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
-gem 'puma', '~> 4.3.9'
+gem 'puma', '~> 4.3.11'
 
 gem 'kaminari', '~> 1.1'
 gem 'kaminari-bootstrap'
