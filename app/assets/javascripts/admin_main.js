@@ -65,3 +65,13 @@ function notAuthorized() {
   $('#modalTip .modal-body').text('没有权限');
   $('#modalTip').modal('show');
 }
+
+function showTip(tip) {
+    $('#modalTip .modal-body').html(tip);
+    $('#modalTip').modal('show');
+}
+
+$(document).on('click', '.table-filter .btn-reset', function () {
+    $(this).parents('form')[0].reset();
+    $('.filter-item .select2').val('').trigger('change');
+});

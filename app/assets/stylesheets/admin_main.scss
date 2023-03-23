@@ -86,3 +86,36 @@ form {
     margin-bottom: 5px;
   }
 }
+
+.table-filter {
+  form {
+    margin-bottom: -20px;
+  }
+}
+.filter-item {
+  padding-bottom: 10px;
+  .col-xs-4 {
+    text-align: right;
+    padding-top: 7px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+//占据两列
+.filter-item-2 {
+  .col-xs-2 {
+    text-align: right;
+    padding-top: 7px;
+    padding-left: 0;
+    padding-right: 0;
+    &.text-left {
+      text-align: left !important;
+    }
+    &.text-center {
+      text-align: center !important;
+    }
+  }
+}
