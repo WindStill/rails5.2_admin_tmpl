@@ -1,6 +1,6 @@
 # TODO
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.11.0"
+lock "~> 3.16.0"
 
 set :application, "my_app_name"
 set :repo_url, "git@example.com:me/my_repo.git"
@@ -9,7 +9,7 @@ set :deploy_to, "/var/www/my_app_name"
 append :linked_files, "config/database.yml", "config/master.key"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "tmp/storage", "public/system"
 
-set :rvm_ruby_version, '2.3.1'
+set :rvm_ruby_version, '2.6.5'
 set :rvm_roles, [:app, :web, :db]
 
 after 'deploy:publishing', 'deploy:restart'
